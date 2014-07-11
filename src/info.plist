@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.deanishe.alfred-bundler-python-demo</string>
+	<key>connections</key>
+	<dict>
+		<key>859208BC-7276-4124-861E-D5021D10D342</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69D933F6-5E41-4D7F-9C00-A758D1A5DDD2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B6B5E527-23D0-4679-8D77-FAC99689E53E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0AB1FB0A-92DD-41D7-B4DC-B26D3572DA97</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Dean Jackson</string>
+	<key>description</key>
+	<string>Demonstration workflow for using the Python version of the Alfred Bundler</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Alfred Bundler Demo (Python)</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/bin/python demo.py --notify "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>69D933F6-5E41-4D7F-9C00-A758D1A5DDD2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>bundleicons</string>
+				<key>runningsubtext</key>
+				<string>Grabbing icons…</string>
+				<key>script</key>
+				<string>/usr/bin/python demo.py --icons "{query}"</string>
+				<key>subtext</key>
+				<string>Show a bunch of random icons from Alfred Bundler</string>
+				<key>title</key>
+				<string>Bundler Icon Demo for Python</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>859208BC-7276-4124-861E-D5021D10D342</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/bin/python demo.py --colour</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0AB1FB0A-92DD-41D7-B4DC-B26D3572DA97</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>bundlecolour</string>
+				<key>subtext</key>
+				<string>Run `bundleicons` again after changing the colour</string>
+				<key>text</key>
+				<string>Choose Icon Colour for Bundler Demo</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B6B5E527-23D0-4679-8D77-FAC99689E53E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>bundletime</string>
+				<key>script</key>
+				<string>/usr/bin/python demo.py --dates</string>
+				<key>subtext</key>
+				<string>Show the current time in a bunch of timezones</string>
+				<key>title</key>
+				<string>Bundler Dependencies Demo for Python</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6918F9F1-109A-458E-ADEE-1B4A98FBB9C8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0AB1FB0A-92DD-41D7-B4DC-B26D3572DA97</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>6918F9F1-109A-458E-ADEE-1B4A98FBB9C8</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>69D933F6-5E41-4D7F-9C00-A758D1A5DDD2</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>859208BC-7276-4124-861E-D5021D10D342</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>B6B5E527-23D0-4679-8D77-FAC99689E53E</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

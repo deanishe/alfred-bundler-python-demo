@@ -1,0 +1,5 @@
+# requirements.txt format details: https://pip.pypa.io/en/1.1/requirements.html
+# If you use a virtualenv to develop your workflow (probably not a great idea)
+# you can use `pip freeze > requirements.txt` to generate the file from your
+# virtualenv
+pytz==2014.4
