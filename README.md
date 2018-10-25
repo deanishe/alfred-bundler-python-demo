@@ -5,7 +5,7 @@ A simple, but hopefully nevertheless fairly comprehensive, demonstration of how 
 
 The Python wrapper can be found [here](https://github.com/shawnrice/alfred-bundler/blob/master/wrappers/bundler.py). Currently, the most detailed documentation can be found in the wrapper's source code. This demo workflow is also very heavy on the comments.
 
-## Shameless plug ##
+## Shameless plug ##
 
 This workflow uses the [Alfred-Workflow library](https://github.com/deanishe/alfred-workflow), which takes care of a lot of the mundane boilerplate of writing a workflow (XML generation, logging/debugging etc.), and also provides some cool features that might be useful for your workflow (fairly smart search, caching, settings, background tasks, simple web access and more).
 
